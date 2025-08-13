@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+body {
+  font-family: "Microsoft JhengHei", system-ui, sans-serif;
+  background: linear-gradient(135deg, #f3f6fa, #e3ecf5);
+  margin: 0;
+  padding: 40px;
+  color: #222;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  animation: fadeIn .5s ease-out;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #334155;
+}
+form label {
+  font-weight: 600;
+  display: block;
+  margin: 14px 0 6px;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  background: #f9fafb;
+  transition: all .2s ease;
+}
+input[type="text"]:focus, select:focus {
+  border-color: #4c8bf5;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(76,139,245,.15);
+  outline: none;
+}
+button[type="submit"], .reset-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+button[type="submit"] {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+.reset-button {
+  background: #f3f4f6;
+  color: #374151;
+}
+.reset-button:hover {
+  background: #e5e7eb;
+}
+.message {
+  display: none;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #e8f7ee;
+  color: #137a39;
+  border: 1px solid #c6ebd3;
+  text-align: center;
+  animation: fadeIn .4s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}  
