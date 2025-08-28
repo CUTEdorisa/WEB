@@ -1,4 +1,4 @@
-```mermaid)
+```mermaid
 flowchart TD
     start([開始]) --> A[啟動 Playwright]
     A --> B[啟動 Chromium（headless=False）]
